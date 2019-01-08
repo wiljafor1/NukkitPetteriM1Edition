@@ -12,7 +12,7 @@ public interface ProtocolInfo {
 
     final int CURRENT_PROTOCOL = 313;
 
-    final List<Integer> SUPPORTED_PROTOCOLS = Ints.asList(282, 291, CURRENT_PROTOCOL);
+    final List<Integer> SUPPORTED_PROTOCOLS = Ints.asList(274, 282, 291, CURRENT_PROTOCOL);
 
     final String MINECRAFT_VERSION = "v1.8.0";
     final String MINECRAFT_VERSION_NETWORK = "1.8.0";

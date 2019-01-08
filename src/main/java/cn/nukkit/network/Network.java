@@ -149,9 +149,13 @@ public class Network {
                 DataPacket pk;
 
                 if ((pk = this.getPacket(buf[0])) != null) {
-                    pk.setBuffer(buf, 1);
-
-                    try { pk.decode(); } catch (Exception e) {}
+                    try {
+                        pk.setBuffer(buf, 1);
+                        pk.decode();
+                    } catch (Exception e) {
+                        pk.setBuffer(buf, 3);
+                        pk.decode();
+                    }
 
                     packets.add(pk);
                 }

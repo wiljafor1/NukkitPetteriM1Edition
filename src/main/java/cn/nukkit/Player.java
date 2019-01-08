@@ -560,6 +560,7 @@ public class Player extends EntityHuman implements CommandSender, InventoryHolde
     public void sendCommandData() {
         if (!spawned) return;
         AvailableCommandsPacket pk = new AvailableCommandsPacket();
+        pk.protocol = this.protocol;
         Map<String, CommandDataVersions> data = new HashMap<>();
         int count = 0;
         for (Command command : this.server.getCommandMap().getCommands().values()) {
@@ -2005,6 +2006,7 @@ public class Player extends EntityHuman implements CommandSender, InventoryHolde
         ResourcePacksInfoPacket infoPacket = new ResourcePacksInfoPacket();
         infoPacket.resourcePackEntries = this.server.getResourcePackManager().getResourceStack();
         infoPacket.mustAccept = this.server.getForceResources();
+        infoPacket.protocol = this.protocol;
         this.dataPacket(infoPacket);
     }
 

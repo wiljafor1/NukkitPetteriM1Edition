@@ -315,4 +315,52 @@ public interface BlockID {
     final int HARD_GLASS = 253;
     final int HARD_STAINED_GLASS = 254;
     final int RESERVED6 = 255;
+    // 256 not yet in Minecraft
+    final int PRISMARINE_STAIRS = 257;
+    final int DARK_PRISMARINE_STAIRS = 258;
+    final int PRISMARINE_BRICKS_STAIRS = 259;
+    final int STRIPPED_SPRUCE_LOG = 260;
+    final int STRIPPED_BIRCH_LOG = 261;
+    final int STRIPPED_JUNGLE_LOG = 262;
+    final int STRIPPED_ACACIA_LOG = 263;
+    final int STRIPPED_DARK_OAK_LOG = 264;
+    final int STRIPPED_OAK_LOG = 265;
+    final int BLUE_ICE = 266;
+    // 267 - 384 not yet in Minecraft
+    final int SEAGRASS = 385;
+    final int CORAL = 386;
+    final int CORAL_BLOCK = 387;
+    final int CORAL_FAN = 388;
+    final int CORAL_FAN_DEAD = 389;
+    final int CORAL_FAN_HANG = 390;
+    final int CORAL_FAN_HANG2 = 391;
+    final int CORAL_FAN_HANG3 = 392;
+    final int KELP = 393;
+    final int DRIED_KELP_BLOCK = 394;
+    final int ACACIA_BUTTON = 395;
+    final int BIRCH_BUTTON = 396;
+    final int DARK_OAK_BUTTON = 397;
+    final int JUNGLE_BUTTON = 398;
+    final int SPRUCE_BUTTON = 399;
+    final int ACACIA_TRAPDOOR = 400;
+    final int BIRCH_TRAPDOOR = 401;
+    final int DARK_OAK_TRAPDOOR = 402;
+    final int JUNGLE_TRAPDOOR = 403;
+    final int SPRUCE_TRAPDOOR = 404;
+    final int ACACIA_PRESSURE_PLATE = 405;
+    final int BIRCH_PRESSURE_PLATE = 406;
+    final int DARK_OAK_PRESSURE_PLATE = 407;
+    final int JUNGLE_PRESSURE_PLATE = 408;
+    final int SPRUCE_PRESSURE_PLATE = 409;
+    final int CARVED_PUMPKIN = 410;
+    final int SEA_PICKLE = 411;
+    final int CONDUIT = 412;
+    // 413 not yet in Minecraft
+    final int TURTLE_EGG = 414;
+    final int BUBBLE_COLUMN = 415;
+    final int BARRIER = 416;
+    // 417 not yet in Minecraft
+    final int BAMBOO = 418;
+    final int BAMBOO_SAPLING = 419;
+    final int SCAFFOLDING = 420;
 }

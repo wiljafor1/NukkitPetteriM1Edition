@@ -269,9 +269,10 @@ public class BinaryStream {
     public Item getSlot() {
         int id = this.getVarInt();
 
-        if (id <= 0) {
+        if (id == 0) {
             return Item.get(0, 0, 0);
         }
+        if (id < 0) id &= 0xffff;
         int auxValue = this.getVarInt();
         int data = auxValue >> 8;
         if (data == Short.MAX_VALUE) {
@@ -328,7 +329,8 @@ public class BinaryStream {
             return;
         }
 
-        this.putVarInt(item.getId());
+        int id = item.getId();
+        this.putVarInt(id > 511 ? id - 65536 : id);
         int metadata = item.hasMeta() ? item.getDamage() : Short.MAX_VALUE;
 
         this.putVarInt((metadata << 8) + (item.getCount() & 0xff));
